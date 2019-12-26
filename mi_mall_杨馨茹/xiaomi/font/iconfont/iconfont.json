@@ -1,0 +1,100 @@
+{
+  "id": "1495168",
+  "name": "xiaomi",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "405727",
+      "name": "qq",
+      "font_class": "qq",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "1336081",
+      "name": "Search",
+      "font_class": "Search",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "5424550",
+      "name": "wechat(1)",
+      "font_class": "wechat",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "6050509",
+      "name": "error",
+      "font_class": "Shapex",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "6528214",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "6928827",
+      "name": "play",
+      "font_class": "bofanganniu",
+      "unicode": "e726",
+      "unicode_decimal": 59174
+    },
+    {
+      "icon_id": "7239609",
+      "name": "alipay-circle",
+      "font_class": "alipay-circle",
+      "unicode": "e715",
+      "unicode_decimal": 59157
+    },
+    {
+      "icon_id": "7239952",
+      "name": "weibo-circle",
+      "font_class": "weibo-circle",
+      "unicode": "e763",
+      "unicode_decimal": 59235
+    },
+    {
+      "icon_id": "7826085",
+      "name": "close",
+      "font_class": "baseline-close-px",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "8760184",
+      "name": "arrow-left",
+      "font_class": "arrow-left",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "8760186",
+      "name": "arrow-right",
+      "font_class": "arrow-right",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "11275196",
+      "name": "circle-arrow-right",
+      "font_class": "circle-arrow-right",
+      "unicode": "e8bb",
+      "unicode_decimal": 59579
+    },
+    {
+      "icon_id": "11474221",
+      "name": "cart-Empty",
+      "font_class": "cart-Empty",
+      "unicode": "e6ef",
+      "unicode_decimal": 59119
+    }
+  ]
+}

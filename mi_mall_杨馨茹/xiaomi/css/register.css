@@ -1,0 +1,232 @@
+body{
+    color: #666;
+    font-size: 14px;
+    font-family:arial,"Hiragino Sans GB", "Microsoft YaHei","微軟正黑體","儷黑 Pro", sans-serif;
+    background-color: #f5f5f5;
+}
+.btn332{
+    width: 330px;
+    height: 42px;
+    margin: 0 auto;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+}
+.wrapper{
+    width: 100%;
+    min-height: 100%;
+}
+.layout{
+    width: 845px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.frame{
+    background-color: white;
+    padding: 0 34px 30px;
+    min-height: 400px;
+}
+.external_logo_area{
+    padding-bottom: 40px;
+}
+.milogo{
+    display: block;
+    width: 49px;
+    height: 48px;
+    margin: 0 auto;
+    background-image: url(../images/logo-footer.png);
+    background-size: contain;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.5;
+    font-weight: normal;
+}
+.regbox{
+    width: 332px;
+    padding: 30px 0;
+    line-height: 20px;
+    margin: 0 auto;
+}
+.regbox .form-group{
+   margin-bottom: 15px; 
+}
+.regbox .form-group .control-label{
+    padding-bottom: 5px;
+    color: #333;
+    display: block;
+}
+.regbox .form-group input{
+    border: 1px solid #e8e8e8;
+    background-color: white;
+    display: inline-block;
+    height: 40px;
+    width: 316px;
+    padding-left: 14px;
+    line-height: 40px;
+    color: #555;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.regbox .form-group.has-error input{
+    border-color:#f66;
+}
+.regbox .form-group .help-block{
+    color: #f66;
+    line-height: 36px;
+    display: none;
+    font-size: 12px;
+}
+.regbox .form-group .icon-Shapex{
+    font-size: 12px;
+}
+.regbox .form-group.has-feedback .help-block{
+    display: block;
+}
+.regbox .form-group .psd-tip{
+    color: #999;
+    font-size: 12px;
+    display: block;
+    line-height: 28px;
+}
+.regbox .btn{
+    margin-top: 15px;
+    text-align: center;
+    background-color: #ff6700;
+    color: #fff;
+}
+.regbox .btn:hover{
+    background-color: #ff936a;
+}
+
+.privacy-box{
+    text-align: center;
+    padding-top: 40px;
+}
+.privacy-box .msg{
+    color: #9d9d9d;
+    padding: 10px 0;
+}
+.privacy-box .msg a{
+    color: #333;
+    font-weight: bold;
+}
+
+.popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.096);
+}
+.popup-box{
+    width: 540px;
+    background: white;
+    border: 1px solid #e8e8e8;
+    border-top:1px solid #ff6700;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 20;
+    padding: 68px 0;
+}
+.popup-box .wrapper{
+    width: 332px;
+    margin: 0 auto;
+}
+.closeBtn{
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    vertical-align: middle;
+    color: #e8e8e8;
+    cursor: pointer;
+    transition: all .2s;
+    text-align: center;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+.icon-baseline-close-px{
+    font-size: 20px;
+    font-weight: 700;
+}
+.closeBtn i:hover{
+    color: #ff6700;
+}
+.na-image-area{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #e3e3e3;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: white;
+    /* clip-path: circle(100%); */
+    margin: 0 auto;
+}
+.username-text{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.avator{
+    width: 100%;
+    height: 100%;
+    clip-path: circle(50%);
+    background: url(../images/n-avator-bg.png) no-repeat 0 0;   
+}
+.text{
+    padding-top: 15px;
+    color: #333;
+}
+.login-btn{
+    margin-top: 15px;
+    background-color: #ff6700;
+    border: 1px solid rgba(186,186,186,0.3);
+}
+.login-btn a{
+    color: white; 
+}
+.login-btn:hover{
+    background-color: #ff936a;
+}
+.reg-btn{
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    color: #7c7c7c;
+}
+.reg-btn:hover{
+    color: #333;
+}
+/*尾部*/
+#foot{
+    padding-top: 100px;
+    text-align: center;
+    height: 80px;
+    font-size: 14px;
+}
+.link-list a{
+    display: inline-block;
+    padding: 0 10px;
+}
+.link-list a,.intro a{
+    color: #757575;
+}
+.link-list a:first-child{
+    color: #333;
+}
+.link-list a:hover{
+    color: #333;
+} 
+.intro{
+    padding: 10px;
+}

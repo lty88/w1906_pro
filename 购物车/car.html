@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .goods_list ul{
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .goods_list ul li{
+            float: left;
+            width: 240px;
+            list-style: none;
+            
+        }
+        .goods_list ul li img{
+            margin-left: 20px;
+        }
+        .goods_list ul li p{
+            text-align: center;
+        }
+        .goods_list ul li p a{
+            display: inline-block;
+            width:80px;
+            height:30px;
+            background:red;
+            color:#fff;
+            line-height:30px;
+            font-size:12px;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor:pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="goods_list">
+        <ul>
+            <li>
+                <img src="img/hua.jpg" alt="花" width="200px" height="200px" />
+                <p class="top_name">月季花--花中皇后(粉色)</p>
+                <p><span>￥200.0</span><a>加入购物车</a></p>
+            </li>
+            <li>
+                <img src="img/hua.jpg" alt="花" width="200px" height="200px"/>
+                <p class="top_name">月季花--花中皇后(粉色)</p>
+                <p><span>￥200.0</span><a>加入购物车</a></p>
+            </li>
+            <li>
+                <img src="img/hua.jpg" alt="花" width="200px" height="200px"/>
+                <p class="top_name">月季花--花中皇后(粉色)</p>
+                <p><span>￥200.0</span><a>加入购物车</a></p>
+            </li>
+            <li>
+                <img src="img/hua.jpg" alt="花" width="200px" height="200px"/>
+                <p class="top_name">月季花--花中皇后(粉色)</p>
+                <p><span>￥200.0</span><a>加入购物车</a></p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="img/hua.jpg" alt="花" width="200px" height="200px"/>
+                <p class="top_name">月季花--花中皇后(粉色)</p>
+                <p><span>￥200.0</span><a>加入购物车</a></p>
+            </li>
+            <li>
+                <img src="img/hua.jpg" alt="花" width="200px" height="200px"/>
+                <p class="top_name">月季花--花中皇后(粉色)</p>
+                <p><span>￥200.0</span><a>加入购物车</a></p>
+            </li>
+            <li>
+                <img src="img/hua.jpg" alt="花" width="200px" height="200px"/>
+                <p class="top_name">月季花--花中皇后(粉色)</p>
+                <p><span>￥200.0</span><a>加入购物车</a></p>
+            </li>
+            <li>
+                <img src="img/hua.jpg" alt="花" width="200px" height="200px"/>
+                <p class="top_name">月季花--花中皇后(粉色)</p>
+                <p><span>￥200.0</span><a>加入购物车</a></p>
+            </li>
+        </ul>
+    </div>
+    
+    <!--
+        作者：411987031@qq.com
+        时间：2018-07-24
+        描述：购物车
+    -->
+    <div class="shopingCar">
+        <div class="kuangk">
+            <a>添加到购物车</a>
+        </div>
+        <div class="lieb">
+            
+        </div>
+    </div>
+    
+
+
+    <script>
+    //点击展开购物车侧边栏
+    var k = 0;
+    $(".shopingCar .kuangk a").click(function(){
+        if(k==0){
+            $(".shopingCar").animate({right:"0px"},500);
+            k=1;
+        }else if(k==1){
+            $(".shopingCar").animate({right:"-310px"},500);
+            k=0;
+        }		
+    });
+    //点击添加商品进入购物车栏
+    $(".goods_list ul li p a").click(function(){
+        $(this).css("background","green");//点击添加按钮按钮变成绿色
+        
+        var img = $(this).parent().siblings("img").attr("src");
+        var txt = $(this).parent().siblings("p.top_name").html();
+        var money = $(this).siblings("span").html();
+        $(".lieb").append("<img style='float:left' src='"+img+"' width='50' height='50' /><p style='float:left'>"+txt+"</p><p style='float:left'>"+money+"</p><br/>");
+        play(event);
+    });
+    //商品飞入购物车动画
+    function play(event){
+        var s_left =event.clientX;//获取鼠标左边的位置
+        var s_top =event.clientY;//获取鼠标上边的位置
+        var e_left =$(".shopingCar .kuangk a").offset().left;
+        var e_top =$(".shopingCar .kuangk a").offset().top;
+        var _this =$(event.target);//当前到点击的js对象
+        var img = _this.parent().siblings("img").attr("src");
+        var flyer =$("<img src='"+img+"' width='50' style='border-radius:50%'/>");//创建图片对象
+        flyer.fly({
+            start:{
+                left:s_left,
+                top:s_top
+            },
+            end:{
+                left:e_left,
+                top:e_top
+            },
+            onEnd:function(){
+                flyer.fadeOut("slow",function(){
+                    $(this).remove();
+                });
+            }
+        })
+    }
+</script>
+
+    </script>
+</body>
+</html>
